@@ -1,0 +1,18 @@
+﻿l_english:
+
+##Activation Event##
+ military.astroengineering.event.0.name: "You are using MASS"
+ military.astroengineering.event.0.desc: "Military Astroengineering Ship Kit, or Constructorvettes, or just MASS for short. This mod adds a type of weak corvette with constructor traits, which is considered a combatant by even the empires with the most legal/moral integrity as it is armed and carries no civilians. It also adds a hidden type which can be crewed by commanders/scientists, unlockable if you have the Hands-On Leadership civic."
+ military.astroengineering.event.0a: "Understood, thank you."
+ military.astroengineering.event.0a.tooltip: "Enable the Military Astroengineering technologies (Requires the Ship Section Mod)"
+ military.astroengineering.event.0b: "[DEBUG] Something has gone wrong!"
+ military.astroengineering.event.0b.tooltip: "Click to disable the Military Astroengineering technologies; If this option is not greyed out, something has gone wrong with either MASS or SSM. Whenever this is the case, please report a bug to Gadg8eer, who will pass it on to the developers of the Ship Section Mod if necessary."
+
+##Options Event##
+##Dummied out for now
+ military.astroengineering.event.101.name: "(MASS) Armored and Gunned Ships?"
+ military.astroengineering.event.101.desc: "Turns the technology for Armored and Gunned ships §GOn§! or §ROff§!. \N Non-Armored and Non-Gunned Sections from this Mod are still availiable."
+ military.astroengineering.event.101a: "£military_power£  §GON!§!  £military_power£"
+ military.astroengineering.event.101a.tooltip: "Enable the Unyielding and Supremacy technologies (Requires the Ship Section Mod)"
+ military.astroengineering.event.101b: "£blocker£  §ROFF!§!  £blocker£"
+ military.astroengineering.event.101b.tooltip: "Disable the Unyieling and Supremacy technologies"

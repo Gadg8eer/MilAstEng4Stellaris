@@ -1,9 +1,0 @@
-﻿l_spanish:
-
-##Event##
- SSM_event.101.name:0 "Naves Blindadas y Armadas?"
- SSM_event.101.desc:0 "Activa o desactiva la tecnología para naves Blindadas y Armadas. \N Las secciones no blindadas y no armadas de este mod siguen siendo utilizables."
- SSM_event.101a:0 "£military_power£  §GACTIVAR!§!  £military_power£"
- SSM_event.101a.tooltip:0 "Activa las tecnologías Inquebrantable y Supremacía"
- SSM_event.101b:0 "£blocker£  §RAPAGAR!§!  £blocker£"
- SSM_event.101b.tooltip:0 "Desactiva las tecnologías Unyielding y Supremacy"

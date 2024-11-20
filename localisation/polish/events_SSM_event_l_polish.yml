@@ -1,9 +1,0 @@
-﻿l_polish:
-
-##Event##
- SSM_event.101.name:0 "Opancerzone i Uzbrojone statki?"
- SSM_event.101.desc:0 "Włącza lub wyłącza technologię dla sekcji Opancerzonych i Uzbrojonych. \N Sekcje nieopancerzone i nieuzbrojone z tego modu są nadal dostępne."
- SSM_event.101a:0 "£military_power£  §WŁ!§!  £military_power£"
- SSM_event.101a.tooltip:0 "Włącza technologie Nieustępliwość i Zwierzchnictwo."
- SSM_event.101b:0 "£blocker£  §RWYŁ!§!  £blocker£"
- SSM_event.101b.tooltip:0 "Wyłącza technologie Nieustępliwość i Zwierzchnictwo."

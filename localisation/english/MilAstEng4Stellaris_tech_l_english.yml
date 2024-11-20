@@ -1,0 +1,30 @@
+﻿l_english:
+
+
+ ####################################
+ # UY
+ ####################################
+ 
+ #tech_MilAstEng_Unyielding:0 "§PArmored Ships§!"
+ #tech_MilAstEng_Unyielding_desc:0 "Expensive ships (+50% alloy cost), but with more hull points (+20-30%) and slots for defence."
+ #tech_unlock_MilAstEng_armored_ships_title:0 "§HUnlocks Ship Type:§! Armored Ships"
+ #tech_unlock_MilAstEng_armored_ships_desc:0 "Expensive ships (+50% alloy cost), but with more hull points (+20-30%) and slots for defence."
+ 
+ 
+ ####################################
+ # SP
+ ####################################
+ 
+ #tech_MilAstEng_Supremacy:0 "§PGunned Ships§!"
+ #tech_MilAstEng_Supremacy_desc:0 "Expensive ships (+50% alloy cost), but with more slots for armament and a bonus to firerate/speed or range."
+ #tech_unlock_MilAstEng_gunned_ships_title:0 "§HUnlocks Ship Type:§! Gunned Ships"
+ #tech_unlock_MilAstEng_gunned_ships_desc:0 "Expensive ships (+50% alloy cost), but with more slots for armament and a bonus to firerate/speed or range."
+ 
+ ####################################
+ # MA
+ ####################################
+ 
+ tech_MilAstEng_astroeng_warships_1: "§PMilitary Astroengineering§!"
+ tech_MilAstEng_astroeng_warships_1_desc: "Specialized, lightly-armed ships that can defend and build but are pushovers in combat and unable to engage."
+ tech_unlock_MilAstEng_astroeng_warships_title: "§HUnlocks Ship Type:§! Astroengineering Warships"
+ tech_unlock_MilAstEng_astroeng_warships_desc: "Specialized, lightly-armed ships that can defend and build but are pushovers in combat and unable to engage."

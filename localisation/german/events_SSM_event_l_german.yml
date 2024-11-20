@@ -1,9 +1,0 @@
-﻿l_german:
-
-##Event##
- SSM_event.101.name:0 "Gepanzerte und Bewaffnete Schiffe?"
- SSM_event.101.desc:0 "Schaltet die Technologie für Gepanzerte und Bewaffnete Schiffe §Gan§! oder §Raus§!. \N Nicht-gepanzerte und nicht-bewaffnete Sektionen aus diesem Mod sind weiterhin verfügbar."
- SSM_event.101a:0 "£military_power£  §GAN!§!  £military_power£"
- SSM_event.101a.tooltip:0 "Aktiviert die Technologien Unnachgiebigkeit und Vorherrschaft"
- SSM_event.101b:0 "£blocker£  §RAUS!§!  £blocker£"
- SSM_event.101b.tooltip:0 "Deaktiviert die Technologien Unnachgiebigkeit und Vorherrschaft"

@@ -1,9 +1,0 @@
-﻿l_english:
-
-##Event##
- SSM_event.101.name:0 "Navires Blindés et Armés?"
- SSM_event.101.desc:0 "§GActive§! ou §Rdésactive§! la technologie des vaisseaux Blindés et Armés. \N Les sections non blindées et non armées de ce mod sont toujours disponibles."
- SSM_event.101a:0 "£military_power£  §GACTIVE!§!  £military_power£"
- SSM_event.101a.tooltip:0 "Active les technologies Résilience et Suprématie."
- SSM_event.101b:0 "£blocker£  §RDÉSACTIVE!§!  £blocker£"
- SSM_event.101b.tooltip:0 "Désactive les technologies Résilience et Suprématie."
