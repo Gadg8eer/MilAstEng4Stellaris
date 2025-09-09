@@ -4,4 +4,5 @@
  # Constructorvette
  ####################################
  MilAstEng_CONSTRUCTORVETTE_MID_M1S1: "Astroengineering Warship"
- MilAstEng_CONSTRUCTORVETTE_WPS: "OwnShip"
+ MilAstEng_OWNSHIP_WPS: "OwnShip"
+#commented line because of paradox shenanigans
