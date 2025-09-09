@@ -16,3 +16,4 @@
  military.astroengineering.event.101a.tooltip: "Enable the Unyielding and Supremacy technologies (Requires the Ship Section Mod)"
  military.astroengineering.event.101b: "£blocker£  §ROFF!§!  £blocker£"
  military.astroengineering.event.101b.tooltip: "Disable the Unyieling and Supremacy technologies"
+#commented line because of paradox shenanigans
