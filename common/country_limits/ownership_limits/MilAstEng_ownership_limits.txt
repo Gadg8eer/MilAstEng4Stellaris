@@ -21,5 +21,6 @@ default = {
 #		titan_ships_limit
 #		juggernaut_ships_limit
 		constructorvette_ships_limit
+		ownship_ships_limit
 	}
 }
