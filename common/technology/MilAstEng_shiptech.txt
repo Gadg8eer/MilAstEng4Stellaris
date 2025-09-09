@@ -1,7 +1,7 @@
 ##UNYIELDING##
 #Unyielding Ship Sections ##put in society because engineering has so much##
 
-tech_MASS_military_astroengineering_1 = {
+tech_MilAstEng_military_astroengineering_1 = {
 	cost = 500
 	area = society
 	tier = 1
@@ -12,8 +12,8 @@ tech_MASS_military_astroengineering_1 = {
 	## unlock Military Engineering Ships
 	prereqfor_desc = {
 		ship = {
-			title = "tech_MASS_unlock_constructorvette_ships_title"
-			desc = "tech_MASS_unlock_constructorvette_ships_desc"
+			title = "tech_MilAstEng_unlock_constructorvette_ships_title"
+			desc = "tech_MilAstEng_unlock_constructorvette_ships_desc"
 		}
 	}
 	
