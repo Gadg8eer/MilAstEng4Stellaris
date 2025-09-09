@@ -57,12 +57,11 @@ ownship = {
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
 	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
 	selectable = { host_has_dlc = "Apocalypse" }
-	max = 1
-
+	
 	default_behavior = artillery
 	ship_roles = { artillery gunship }
 
-	prerequisites = { "tech_titans" }
+	#prerequisites = { "tech_titans" }
 
 	combat_disengage_chance = 1.25
 
@@ -93,17 +92,17 @@ ownship = {
 					any_owned_ship = {
 						OR = {
 							is_ship_size = ownship 
-							is_ship_size = ownship_corvette
-							is_ship_size = ownship_destroyer
-							is_ship_size = ownship_cruiser
-							is_ship_size = ownship_battleship
+							# is_ship_size = ownship_corvette
+							# is_ship_size = ownship_destroyer
+							# is_ship_size = ownship_cruiser
+							# is_ship_size = ownship_battleship
 						}
 					}
 				}
 			}
 	}	
 	}
-
+	
 	possible_construction = {
 		custom_tooltip = {
 			fail_text = starbase_citadel_trigger
@@ -159,350 +158,362 @@ ownship = {
 	}
 }
 
-ownship_corvette = {
-	formation_priority = @corvette_formation_priority
-	max_speed = @speed_very_fast
-	acceleration = 0.6
-	rotation_speed = 0.1
-	collision_radius = @corvette_collision_radius
-	max_hitpoints = 500
-	modifier = {
-		ship_evasion_add = 50
-	}
-	hull_scale = 2
-	size_multiplier = 2
-	section_slots = { "bow" = { locator = "part1" } "stern" = { locator = "part2" } }
-	num_target_locators = 5
-	is_space_station = no
-	icon = ship_size_military_16
-	base_buildtime = 100
-	can_have_federation_design = no
-	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
-	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
-	selectable = { host_has_dlc = "Apocalypse" }
-	max = 1
+#ownship_corvette = {
+#	formation_priority = @corvette_formation_priority
+#	max_speed = @speed_very_fast
+#	acceleration = 0.6
+#	rotation_speed = 0.1
+#	collision_radius = @corvette_collision_radius
+#	max_hitpoints = 500
+#	modifier = {
+#		ship_evasion_add = 50
+#	}
+#	hull_scale = 2
+#	size_multiplier = 2
+#	section_slots = { "bow" = { locator = "part1" } "stern" = { locator = "part2" } }
+#	num_target_locators = 5
+#	is_space_station = no
+#	icon = ship_size_military_16
+#	base_buildtime = 100
+#	can_have_federation_design = no
+#	enable_default_design = yes#	#if yes, countries will have an auto-generated design at start
+#	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
+#	selectable = { host_has_dlc = "Apocalypse" }
+#		
+#	empire_limit = {
+#		base = 1 (max = 1 naval_cap_div = 1)
+#	}
+#	
+#	default_behavior = artillery
+#	ship_roles = { artillery gunship }
 
-	default_behavior = artillery
-	ship_roles = { artillery gunship }
+#	prerequisites = { "tech_corvettes" }
 
-	prerequisites = { "tech_corvettes" }
+#	combat_disengage_chance = 1.25
 
-	combat_disengage_chance = 1.25
+#	class = shipclass_military
+#	construction_type = starbase_shipyard
+#	required_component_set = "power_core"
+#	required_component_set = "ftl_components"
+#	required_component_set = "thruster_components"
+#	required_component_set = "sensor_components"
+#	required_component_set = "combat_computers"
+#	required_component_set = "ship_aura_components"
 
-	class = shipclass_military
-	construction_type = starbase_shipyard
-	required_component_set = "power_core"
-	required_component_set = "ftl_components"
-	required_component_set = "thruster_components"
-	required_component_set = "sensor_components"
-	required_component_set = "combat_computers"
-	required_component_set = "ship_aura_components"
+#	potential_construction = {
+#		OR = {
+#			is_scope_type = starbase
+#			AND = {
+#				is_scope_type = megastructure
+#				OR = {
+#					is_megastructure_type = mega_shipyard_3
+#					is_megastructure_type = mega_shipyard_restored
+#				}
+#			}
+#		}
+#		custom_tooltip = {
+#			fail_text = #ownship_already_exists
+#			owner = {
+#				NOT = {
+#					any_owned_ship = {
+#						OR = {
+#							is_ship_size = ownship 
+#								is_ship_size = #ownship_corvette
+#								is_ship_size = #ownship_destroyer
+#								is_ship_size = #ownship_cruiser
+#								is_ship_size = #ownship_battleship
+#						}
+#					}
+#				}
+#			}
+#	}
+#	}
+#	
+#	resources = {
+#		category = ships
+#		upkeep = {
+#			energy = 2
+#			alloys = 2
+#		}
+#	}
 
-	potential_construction = {
-		OR = {
-			is_scope_type = starbase
-			AND = {
-				is_scope_type = megastructure
-				OR = {
-					is_megastructure_type = mega_shipyard_3
-					is_megastructure_type = mega_shipyard_restored
-				}
-			}
-		}
-		custom_tooltip = {
-			fail_text = ownship_already_exists
-			owner = {
-				NOT = {
-					any_owned_ship = {
-						OR = {
-							is_ship_size = ownship 
-							is_ship_size = ownship_corvette
-							is_ship_size = ownship_destroyer
-							is_ship_size = ownship_cruiser
-							is_ship_size = ownship_battleship
-						}
-					}
-				}
-			}
-	}	
-	}
-	
-	resources = {
-		category = ships
-		upkeep = {
-			energy = 2
-			alloys = 2
-		}
-	}
+#	min_upgrade_cost = {
+#		alloys = 16
+#	}
 
-	min_upgrade_cost = {
-		alloys = 16
-	}
+#	ai_ship_data = {
+#		min = 0
+#		max = 0
+#	}
+#}
 
-	ai_ship_data = {
-		min = 0
-		max = 0
-	}
-}
+#ownship_destroyer = {
+#	formation_priority = @destroyer_formation_priority
+#	max_speed = 130
+#	acceleration = 0.6
+#	rotation_speed = 0.1
+#	collision_radius = @destroyer_collision_radius
+#	max_hitpoints = 1200
+#	modifier = {
+#		ship_evasion_add = 30
+#	}
+#	hull_scale = 2
+#	size_multiplier = 4
+#	fleet_slot_size = 4
+#	section_slots = { "bow" = { locator = "part1" } "mid" = { locator = "part2" } "stern" = { locator = "part3" } }
+#	num_target_locators = 5
+#	is_space_station = no
+#	icon = ship_size_military_16
+#	base_buildtime = 160
+#	can_have_federation_design = no
+#	enable_default_design = yes#	#if yes, countries will have an auto-generated design at start
+#	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
+#	selectable = { host_has_dlc = "Apocalypse" }
+#		
+#	empire_limit = {
+#		base = 1 (max = 1 naval_cap_div = 1)
+#	}
+#	
+#	default_behavior = artillery
+#	ship_roles = { artillery gunship }
 
-ownship_destroyer = {
-	formation_priority = @destroyer_formation_priority
-	max_speed = 130
-	acceleration = 0.6
-	rotation_speed = 0.1
-	collision_radius = @destroyer_collision_radius
-	max_hitpoints = 1200
-	modifier = {
-		ship_evasion_add = 30
-	}
-	hull_scale = 2
-	size_multiplier = 4
-	fleet_slot_size = 4
-	section_slots = { "bow" = { locator = "part1" } "mid" = { locator = "part2" } "stern" = { locator = "part3" } }
-	num_target_locators = 5
-	is_space_station = no
-	icon = ship_size_military_16
-	base_buildtime = 160
-	can_have_federation_design = no
-	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
-	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
-	selectable = { host_has_dlc = "Apocalypse" }
-	max = 1
+#	prerequisites = { "tech_destroyers" }
 
-	default_behavior = artillery
-	ship_roles = { artillery gunship }
+#	combat_disengage_chance = 1.25
 
-	prerequisites = { "tech_destroyers" }
+#	class = shipclass_military
+#	construction_type = starbase_shipyard
+#	required_component_set = "power_core"
+#	required_component_set = "ftl_components"
+#	required_component_set = "thruster_components"
+#	required_component_set = "sensor_components"
+#	required_component_set = "combat_computers"
+#	required_component_set = "ship_aura_components"
 
-	combat_disengage_chance = 1.25
+#	potential_construction = {
+#		OR = {
+#			is_scope_type = starbase
+#			AND = {
+#				is_scope_type = megastructure
+#				OR = {
+#					is_megastructure_type = mega_shipyard_3
+#					is_megastructure_type = mega_shipyard_restored
+#				}
+#			}
+#		}
+#		custom_tooltip = {
+#			fail_text = #ownship_already_exists
+#			owner = {
+#				NOT = {
+#					any_owned_ship = {
+#						OR = {
+#							is_ship_size = ownship 
+#								is_ship_size = #ownship_corvette
+#								is_ship_size = #ownship_destroyer
+#								is_ship_size = #ownship_cruiser
+#								is_ship_size = #ownship_battleship
+#						}
+#					}
+#				}
+#			}
+#	}
+#	}
+#	
+#	resources = {
+#		category = ships
+#		upkeep = {
+#			energy = 3
+#			alloys = 3
+#		}
+#	}
 
-	class = shipclass_military
-	construction_type = starbase_shipyard
-	required_component_set = "power_core"
-	required_component_set = "ftl_components"
-	required_component_set = "thruster_components"
-	required_component_set = "sensor_components"
-	required_component_set = "combat_computers"
-	required_component_set = "ship_aura_components"
+#	min_upgrade_cost = {
+#		alloys = 16
+#	}
 
-	potential_construction = {
-		OR = {
-			is_scope_type = starbase
-			AND = {
-				is_scope_type = megastructure
-				OR = {
-					is_megastructure_type = mega_shipyard_3
-					is_megastructure_type = mega_shipyard_restored
-				}
-			}
-		}
-		custom_tooltip = {
-			fail_text = ownship_already_exists
-			owner = {
-				NOT = {
-					any_owned_ship = {
-						OR = {
-							is_ship_size = ownship 
-							is_ship_size = ownship_corvette
-							is_ship_size = ownship_destroyer
-							is_ship_size = ownship_cruiser
-							is_ship_size = ownship_battleship
-						}
-					}
-				}
-			}
-	}	
-	}
-	
-	resources = {
-		category = ships
-		upkeep = {
-			energy = 3
-			alloys = 3
-		}
-	}
+#	ai_ship_data = {
+#		min = 0
+#		max = 0
+#	}
+#}
 
-	min_upgrade_cost = {
-		alloys = 16
-	}
+#ownship_cruiser = {
+#	formation_priority = @cruiser_formation_priority
+#	max_speed = 110
+#	acceleration = 0.6
+#	rotation_speed = 0.1
+#	collision_radius = @cruiser_collision_radius
+#	max_hitpoints = 8500
+#	modifier = {
+#		ship_evasion_add = 5
+#	}
+#	hull_scale = 2
+#	size_multiplier = 8
+#	fleet_slot_size = 8
+#	section_slots = { "bow" = { locator = "part1" } "mid" = { locator = "part2" } "stern" = { locator = "part3" } }
+#	num_target_locators = 5
+#	is_space_station = no
+#	icon = ship_size_military_16
+#	base_buildtime = 240
+#	can_have_federation_design = no
+#	enable_default_design = yes#	#if yes, countries will have an auto-generated design at start
+#	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
+#	selectable = { host_has_dlc = "Apocalypse" }
+#		
+#	empire_limit = {
+#		base = 1 (max = 1 naval_cap_div = 1)
+#	}
+#	
+#	default_behavior = artillery
+#	ship_roles = { artillery gunship }
 
-	ai_ship_data = {
-		min = 0
-		max = 0
-	}
-}
+#	prerequisites = { "tech_cruisers" }
 
-ownship_cruiser = {
-	formation_priority = @cruiser_formation_priority
-	max_speed = 110
-	acceleration = 0.6
-	rotation_speed = 0.1
-	collision_radius = @cruiser_collision_radius
-	max_hitpoints = 8500
-	modifier = {
-		ship_evasion_add = 5
-	}
-	hull_scale = 2
-	size_multiplier = 8
-	fleet_slot_size = 8
-	section_slots = { "bow" = { locator = "part1" } "mid" = { locator = "part2" } "stern" = { locator = "part3" } }
-	num_target_locators = 5
-	is_space_station = no
-	icon = ship_size_military_16
-	base_buildtime = 240
-	can_have_federation_design = no
-	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
-	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
-	selectable = { host_has_dlc = "Apocalypse" }
-	max = 1
+#	combat_disengage_chance = 1.25
 
-	default_behavior = artillery
-	ship_roles = { artillery gunship }
+#	class = shipclass_military
+#	construction_type = starbase_shipyard
+#	required_component_set = "power_core"
+#	required_component_set = "ftl_components"
+#	required_component_set = "thruster_components"
+#	required_component_set = "sensor_components"
+#	required_component_set = "combat_computers"
+#	required_component_set = "ship_aura_components"
 
-	prerequisites = { "tech_cruisers" }
+#	potential_construction = {
+#		OR = {
+#			is_scope_type = starbase
+#			AND = {
+#				is_scope_type = megastructure
+#				OR = {
+#					is_megastructure_type = mega_shipyard_3
+#					is_megastructure_type = mega_shipyard_restored
+#				}
+#			}
+#		}
+#		custom_tooltip = {
+#			fail_text = #ownship_already_exists
+#			owner = {
+#				NOT = {
+#					any_owned_ship = {
+#						OR = {
+#							is_ship_size = ownship 
+#								is_ship_size = #ownship_corvette
+#								is_ship_size = #ownship_destroyer
+#								is_ship_size = #ownship_cruiser
+#								is_ship_size = #ownship_battleship
+#						}
+#					}
+#				}
+#			}
+#	}
+#	}
+#	
+#	resources = {
+#		category = ships
+#		upkeep = {
+#			energy = 4
+#			alloys = 4
+#		}
+#	}
 
-	combat_disengage_chance = 1.25
+#	min_upgrade_cost = {
+#		alloys = 16
+#	}
 
-	class = shipclass_military
-	construction_type = starbase_shipyard
-	required_component_set = "power_core"
-	required_component_set = "ftl_components"
-	required_component_set = "thruster_components"
-	required_component_set = "sensor_components"
-	required_component_set = "combat_computers"
-	required_component_set = "ship_aura_components"
+#	ai_ship_data = {
+#		min = 0
+#		max = 0
+#	
+#	}
+#}
 
-	potential_construction = {
-		OR = {
-			is_scope_type = starbase
-			AND = {
-				is_scope_type = megastructure
-				OR = {
-					is_megastructure_type = mega_shipyard_3
-					is_megastructure_type = mega_shipyard_restored
-				}
-			}
-		}
-		custom_tooltip = {
-			fail_text = ownship_already_exists
-			owner = {
-				NOT = {
-					any_owned_ship = {
-						OR = {
-							is_ship_size = ownship 
-							is_ship_size = ownship_corvette
-							is_ship_size = ownship_destroyer
-							is_ship_size = ownship_cruiser
-							is_ship_size = ownship_battleship
-						}
-					}
-				}
-			}
-	}	
-	}
-	
-	resources = {
-		category = ships
-		upkeep = {
-			energy = 4
-			alloys = 4
-		}
-	}
+#ownship_battleship = {
+#	formation_priority = @battleship_formation_priority
+#	max_speed = 90
+#	acceleration = 0.6
+#	rotation_speed = 0.1
+#	collision_radius = @battleship_collision_radius
+#	max_hitpoints = 12000
+#	modifier = {
+#		ship_evasion_add = 5
+#	}
+#	hull_scale = 2
+#	size_multiplier = 16
+#	fleet_slot_size = 16
+#	section_slots = { "bow" = { locator = "part1" } "mid" = { locator = "part2" } "stern" = { locator = "part3" } } 
+#	num_target_locators = 5
+#	is_space_station = no
+#	icon = ship_size_military_16
+#	base_buildtime = 360
+#	can_have_federation_design = no
+#	enable_default_design = yes#	#if yes, countries will have an auto-generated design at start
+#	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
+#	selectable = { host_has_dlc = "Apocalypse" }
+#	
+#	empire_limit = {
+#		base = 1 (max = 1 naval_cap_div = 1)
+#	}
+#	
+#	default_behavior = artillery
+#	ship_roles = { artillery gunship }
+#	
+#	prerequisites = { "tech_battleships" }
+#	
+#	combat_disengage_chance = 1.25
+#	
+#	class = shipclass_military
+#	construction_type = starbase_shipyard
+#	required_component_set = "power_core"
+#	required_component_set = "ftl_components"
+#	required_component_set = "thruster_components"
+#	required_component_set = "sensor_components"
+#	required_component_set = "combat_computers"
+#	required_component_set = "ship_aura_components"
 
-	min_upgrade_cost = {
-		alloys = 16
-	}
+#	potential_construction = {
+#		OR = {
+#			is_scope_type = starbase
+#			AND = {
+#				is_scope_type = megastructure
+#				OR = {
+#					is_megastructure_type = mega_shipyard_3
+#					is_megastructure_type = mega_shipyard_restored
+#				}
+#			}
+#		}
+#		custom_tooltip = {
+#			fail_text = #ownship_already_exists
+#			owner = {
+#				NOT = {
+#					any_owned_ship = {
+#						OR = {
+#							is_ship_size = ownship 
+#								is_ship_size = #ownship_corvette
+#								is_ship_size = #ownship_destroyer
+#								is_ship_size = #ownship_cruiser
+#								is_ship_size = #ownship_battleship
+#						}
+#					}
+#				}
+#			}
+#	}
+#	}
+#	
+#	resources = {
+#		category = ships
+#		upkeep = {
+#			energy = 5
+#			alloys = 5
+#		}
+#	}
 
-	ai_ship_data = {
-		min = 0
-		max = 0
-	
-	}
-}
+#	min_upgrade_cost = {
+#		alloys = 16
+#	}
 
-ownship_battleship = {
-	formation_priority = @battleship_formation_priority
-	max_speed = 90
-	acceleration = 0.6
-	rotation_speed = 0.1
-	collision_radius = @battleship_collision_radius
-	max_hitpoints = 12000
-	modifier = {
-		ship_evasion_add = 5
-	}
-	hull_scale = 2
-	size_multiplier = 16
-	fleet_slot_size = 16
-	section_slots = { "bow" = { locator = "part1" } "mid" = { locator = "part2" } "stern" = { locator = "part3" } } 
-	num_target_locators = 5
-	is_space_station = no
-	icon = ship_size_military_16
-	base_buildtime = 360
-	can_have_federation_design = no
-	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
-	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
-	selectable = { host_has_dlc = "Apocalypse" }
-	max = 1
-
-	default_behavior = artillery
-	ship_roles = { artillery gunship }
-
-	prerequisites = { "tech_battleships" }
-
-	combat_disengage_chance = 1.25
-
-	class = shipclass_military
-	construction_type = starbase_shipyard
-	required_component_set = "power_core"
-	required_component_set = "ftl_components"
-	required_component_set = "thruster_components"
-	required_component_set = "sensor_components"
-	required_component_set = "combat_computers"
-	required_component_set = "ship_aura_components"
-
-	potential_construction = {
-		OR = {
-			is_scope_type = starbase
-			AND = {
-				is_scope_type = megastructure
-				OR = {
-					is_megastructure_type = mega_shipyard_3
-					is_megastructure_type = mega_shipyard_restored
-				}
-			}
-		}
-		custom_tooltip = {
-			fail_text = ownship_already_exists
-			owner = {
-				NOT = {
-					any_owned_ship = {
-						OR = {
-							is_ship_size = ownship 
-							is_ship_size = ownship_corvette
-							is_ship_size = ownship_destroyer
-							is_ship_size = ownship_cruiser
-							is_ship_size = ownship_battleship
-						}
-					}
-				}
-			}
-	}	
-	}
-	
-	resources = {
-		category = ships
-		upkeep = {
-			energy = 5
-			alloys = 5
-		}
-	}
-
-	min_upgrade_cost = {
-		alloys = 16
-	}
-
-	ai_ship_data = {
-		min = 0
-		max = 0
-	}
-}
+#	ai_ship_data = {
+#		min = 0
+#		max = 0
+#	}
+#}
