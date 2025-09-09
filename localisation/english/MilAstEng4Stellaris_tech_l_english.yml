@@ -24,7 +24,8 @@
  # MA
  ####################################
  
- tech_MilAstEng_astroeng_warships_1: "§PMilitary Astroengineering§!"
- tech_MilAstEng_astroeng_warships_1_desc: "Specialized, lightly-armed ships that can defend and build but are pushovers in combat and unable to engage."
- tech_unlock_MilAstEng_astroeng_warships_title: "§HUnlocks Ship Type:§! Astroengineering Warships"
- tech_unlock_MilAstEng_astroeng_warships_desc: "Specialized, lightly-armed ships that can defend and build but are pushovers in combat and unable to engage."
+ tech_MilAstEng_military_astroengineering_1: "§PMilitary Astroengineering§!"
+ tech_MilAstEng_military_astroengineering_1_desc: "Specialized, lightly-armed ships that can defend and build but are pushovers in combat and unable to engage."
+ tech_MilAstEng_military_astroengineering_1_title: "§HUnlocks Ship Type:§! Astroengineering Warships"
+ tech_MilAstEng_military_astroengineering_1_desc: "Specialized, lightly-armed ships that can defend and build but are pushovers in combat and unable to engage."
+#commented line because of paradox shenanigans
